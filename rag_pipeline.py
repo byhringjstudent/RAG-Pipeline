@@ -33,7 +33,7 @@ retriever = InMemoryBM25Retriever(document_store=document_store)
 prompt_builder = PromptBuilder(template=prompt_template)
 
 # Pass the API key directly as a string
-llm = OpenAIGenerator(api_key=Secret.from_token("sk-ul1rugczxSUHKsePaTc-8VORwg5JkJjGgavniptGsrT3BlbkFJXq03HZ7446TRkpUEL_J41rWkk1YEDB407vHKgKPKEA"))
+llm = OpenAIGenerator(api_key=Secret.from_token("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"))
 
 
 # Step 3: Create the RAG pipeline
@@ -52,7 +52,7 @@ rag_pipeline.connect("prompt_builder", "llm")
 questions = [
     "An AI algorithm is sometimes called this:",
     "Among the most common AI algorithms are these:",
-    "Knowing how to model a real-world program to a machine-learning algorithm is a critical task! The four different ways of using AI algorithms to solve problems are:",
+    "Knowing how to model a real-world problem to a machine-learning algorithm is a critical task! The four different ways of using AI algorithms to solve problems are:",
 ]
 
 # Iterate over each question and get the answers
