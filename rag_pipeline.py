@@ -1,5 +1,6 @@
 # Building RAG Pipelines
 
+# Step 1
 import os
 from haystack import Pipeline, Document
 from haystack.document_stores.in_memory import InMemoryDocumentStore
